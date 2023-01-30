@@ -656,9 +656,7 @@
                         <td>طراحی سوالات ارزشیابی کارمندان</td>
                         <td>فعال</td>
                         <td>
-                            <i class="fas fa-project-diagram text-info mx-1 hoverable_text pointer has_tooltip" title="زیرمجموعه" data-bs-toggle="tooltip" data-bs-placement="top"></i>
                             <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_product_category_modal"></i>
-                            <i class="fas fa-plus text-success mx-1 hoverable_text pointer has_tooltip" title="افزودن ویژگی" data-bs-toggle="modal" data-bs-target="#add_product_category_attr_modal"></i>
                             <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
                         </td>
                     </tr>
@@ -667,10 +665,71 @@
                         <td>طراحی سوالات ارزشیابی مدیران</td>
                         <td>فعال</td>
                         <td>
-                            <i class="fas fa-project-diagram text-info mx-1 hoverable_text pointer has_tooltip" title="زیرمجموعه" data-bs-toggle="tooltip" data-bs-placement="top"></i>
                             <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
-                            <i class="fas fa-plus text-success mx-1 hoverable_text pointer has_tooltip" title="افزودن ویژگی" data-bs-placement="top" data-bs-toggle="modal" data-bs-target="#add_product_category_attr_modal"></i>
                             <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف دسته" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination dir_ltr">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            
+        </div>
+        <!-- #endregion content -->
+        <!-- #region(collapsed) add product category section start -->
+        <div id="setting_evaluation" class="setting_evaluation main_section d-none">
+            <h4 class="text-center my-3">تعریف و تنظیم ارزشیابی</h4>
+            <div class="row justify-content-between">
+                <div class="col-10 col-md-6 col-lg-4">
+                    <div class="input-group mb-3" style="direction: ltr;">
+                        <input type="text" class="form-control" placeholder="قسمتی از عنوان را وارد کنید">
+                        <span class="input-group-text" >جستجو</span>
+                    </div>
+                </div>
+                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#add_product_category_modal1">
+                        <i class="fas fa-plus text-light" title="افزودن ارزشیابی جدید"></i>
+                    </button>
+                </div>
+            </div>
+            <table class="table table-responsive text-center table-hover table-bordered">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>#</th>
+                        <th>عنوان</th>
+                        <th>گروه مورد ارزیابی</th>
+                        <th>تاریخ شروع</th>
+                        <th>تاریخ پایان</th>
+                        <th>وضعیت</th>
+                        <th>عملیات</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>طراحی سوالات ارزشیابی کارمندان</td>
+                        <td>پرسنل اداری</td>
+                        <td>1401/12/17</td>
+                        <td>1401/12/27</td>
+                        <td>فعال</td>
+                        <td>
+                            <i class="fas fa-edit text-warning mx-1 hoverable_text pointer has_tooltip" title="ویرایش ارزشیابی" data-bs-toggle="modal" data-bs-placement="top" data-bs-target="#add_product_category_modal1"></i>
+                            <i class="fas fa-times text-danger mx-1 hoverable_text pointer has_tooltip" title="حذف ارزشیابی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
                         </td>
                     </tr>
                 </tbody>
@@ -840,28 +899,7 @@
 
         <!-- #endregion content -->
 
-        <!-- #region(collapsed) cart section start  -->
-        <div id="manage_cart_section" class="manage_cart_section main_section d-none">
-            <h4 class="text-center my-3">چارت نیروی انسانی</h4>
-            <div class="row justify-content-between">
-                <div class="col-10 col-md-6 col-lg-4">
-                    <div class="input-group mb-3" style="direction: ltr;">
-                        <input type="text" class="form-control" placeholder="قسمتی از نام یا شماره سبد را وارد کنید">
-                        <span class="input-group-text" >جستجو</span>
-                    </div>
-                </div>
-                <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
-                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#edit_cart_modal">
-                        <i class="fas fa-plus text-light"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="d-flex justify-content-center h-100">
-                <img class="h-100"  src="assets/images/treeDiagram.png" alt="">
-            </div>
-        </div>
-        <!-- #endregion -->
-    
+   
         <!-- #region(collapsed) order section start  -->
         <div id="manage_orders_section" class="manage_orders_section main_section d-none">
             <h4 class="text-center my-3">واحدهای سازمانی</h4>
@@ -889,7 +927,7 @@
     
         <!-- #region(collapsed) manage delivery section start -->
         <div id="manage_deliveries_section" class="manage_deliveries_section main_section d-none">
-            <h4 class="text-center my-3">پست سازمانی</h4>
+            <h4 class="text-center my-3">پست سازمانی (اشخاص)</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
                     <div class="input-group mb-3" style="direction: ltr;">
@@ -898,7 +936,7 @@
                     </div>
                 </div>
                 <div class="col-2 col-md-6 col-lg-4 d-flex flex-column align-items-end">
-                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#edit_cart_modal">
+                    <button class="btn btn-success d-flex justify-content-center align-items-center" data-bs-toggle="modal" data-bs-target="#edit_cart_modal2">
                         <i class="fas fa-plus text-light"></i>
                     </button>
                 </div>
@@ -1554,7 +1592,7 @@
                                     <option value="1">کارمندان</option>
                                     <option value="1">نیروهای عملیاتی</option>
                                 </select>
-                                <span class="input-group-text w_6rem justify-content-center">گروه مورد ارزیابی</span>
+                                <span class="input-group-text w_6rem justify-content-center">مورد ارزیابی</span>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-8">
@@ -1567,6 +1605,67 @@
                             <div class="input-group mb-3" style="direction: ltr;">
                                 <textarea type="text" class="form-control" placeholder="توضیحات" rows="5"></textarea>
                                 <span class="input-group-text w_6rem justify-content-center">توضیحات</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8 row justify-content-center">
+                            <div class="form-check form-switch col-5 col-md-2">
+                                <input class="form-check-input pointer" type="checkbox" id="flexSwitchCheckDefault" checked>
+                                <label class="form-check-label pointer" for="flexSwitchCheckDefault">وضعیت فعال</label>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--  #endregion  -->
+    <!-- #region(collapsed) add product category modal  -->
+    <div class="modal fade" id="add_product_category_modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">تعریف ارزیابی جدید</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <select type="text" class="form-control">
+                                    <option value="1">کارمندان</option>
+                                    <option value="1">نیروهای عملیاتی</option>
+                                </select>
+                                <span class="input-group-text w_6rem justify-content-center">مورد ارزیابی</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <select type="text" class="form-control">
+                                    <option value="1">سوالات ارزشیابی کارمندان</option>
+                                    <option value="1">سوالات ارزشیابی مدیران</option>
+                                </select>
+                                <span class="input-group-text w_6rem justify-content-center">عنوان ارزیابی</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="date" class="form-control" placeholder="تاریخ شروع ارزیابی">
+                                <span class="input-group-text w_6rem justify-content-center">تاریخ شروع</span>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group mb-3" style="direction: ltr;">
+                                <input type="date" class="form-control" placeholder="تاریخ پایان ارزیابی">
+                                <span class="input-group-text w_6rem justify-content-center">تاریخ پایان</span>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-8 row justify-content-center">
@@ -1988,83 +2087,184 @@
         <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title flex-fill" id="exampleModalLabel">جزئیات سبد خرید</h5>
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">تعریف واحد سازمانی</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="container">
                     <div class="row my-3 justify-content-center">
                         <div class="col-12 col-md-4 col-lg-3 my-1">
-                            <input type="text" class="form-control" list="customer_list" placeholder="نام مشتری">
+                            <input type="text" class="form-control" list="customer_list" placeholder="عنوان واحد سازمانی">
                             <datalist id="customer_list">
-                                <option value="مشتری شماره 1">
-                                <option value="مشتری شماره 2">
+                                <option value="عنوان 1">
+                                <option value="عنوان  2">
                             </datalist>
                         </div>
                         <div class="col-12 col-md-4 col-lg-2 my-1">
-                            <input type="text" class="form-control" list="product_list" placeholder="عنوان محصول">
+                            <input type="text" class="form-control" list="product_list" placeholder="عنوان معاونت">
                             <datalist id="product_list">
-                                <option value="محصول شماره 1">
-                                <option value="محصول شماره 2">
+                                <option value="معاونت شماره1">
+                                <option value="معاونت شماره 2">
                             </datalist>
                         </div>
                         <div class="col-12 col-md-4 col-lg-2 my-1">
                             <select class="form-control">
-                                <option value="">انتخاب رنگ</option>
+                                <option value=""> انتخاب رنگ پست</option>
                                 <option value="1">رنگ شماره 1</option>
                                 <option value="2">رنگ شماره 2</option>
                             </select>                                
                         </div>
                         <div class="col-12 col-md-4 col-lg-2 my-1">
-                            <select class="form-control">
-                                <option value="">انتخاب گارانتی</option>
-                                <option value="1">گارانتی شماره 1</option>
-                                <option value="2">گارانتی شماره 2</option>
-                            </select>                                
-                        </div>
-                        <div class="col-12 col-md-4 col-lg-2 my-1">
-                            <input type="number" class="form-control" placeholder="تعداد">
+                            <input title="تعداد زیر مجموعه" value="3" type="number" class="form-control" placeholder="تعداد زیر مجموعه">
                         </div>
                         <div class="col-4 col-lg-1 d-flex justify-content-center align-items-center my-1">
-                            <i class="fas fa-check text-light bg-success rounded-circle p-2 mx-1 hoverable_text hoverable pointer has_tooltip hoverable_text" title="ثبت ویژگی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                            <i class="fas fa-check text-light bg-success rounded-circle p-2 mx-1 hoverable_text hoverable pointer has_tooltip hoverable_text" title="تایید ویژگی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
                         </div>
                         <hr class="mt-3">
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-12 col-md-6 col-lg-8">
                             <div class="input-group my-3" style="direction: ltr;">
-                                <span class="input-group-text justify-content-center w_15" >عدد</span>
-                                <input type="number" class="form-control text-center w_15" placeholder=""  value="50">
-                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                <select type="number" class="form-control text-center w_15" placeholder=""  value="50">
+                                    <option value="">مافوق 1</option>
+                                    <option value="">مافوق 2</option>
+                                    <option value="">مافوق 3</option>
+                                </select>
+                                <select class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
                                     <i class="fas fa-times text-danger hoverable_text pointer mx-1 has_tooltip" title="حذف محصول از سبد" data-bs-placement="top"></i>
-                                    محصول شماره 1
-                                    ( 100هزار تومان)
-                                    ( گارانتی فلان)
+                                    <option value="">واحد شماره 1(وابسته به واحد های تعریف شده) (وابسته به واحد های تعریف شده)</option>
+                                    <option value="">واحد شماره 2</option>
+                                    <option value="">واحد شماره 3</option>
                                     <i class="fas fa-circle mx-1" style="color: #000;"></i>
-                                </span>
+                                </select>
                             </div>
                         </div>
                         <div class="col-12 col-md-6 col-lg-8">
                             <div class="input-group my-3" style="direction: ltr;">
-                                <span class="input-group-text justify-content-center w_15" >عدد</span>
-                                <input type="number" class="form-control text-center w_15" placeholder=""  value="5">
-                                <span class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                <select type="number" class="form-control text-center w_15" placeholder=""  value="50">
+                                    <option value="">مافوق 1</option>
+                                    <option value="">مافوق 2</option>
+                                    <option value="">مافوق 3</option>
+                                </select>
+                                <select class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
                                     <i class="fas fa-times text-danger hoverable_text pointer mx-1 has_tooltip" title="حذف محصول از سبد" data-bs-placement="top"></i>
-                                    محصول ویژه و مورد خاص شماره 2
-                                    ( 100هزار تومان)
-                                    ( گارانتی فلان)
-                                    <i class="fas fa-circle mx-1" style="color: rgb(236, 16, 16);"></i>
-                                </span>
+                                    <option value="">واحد شماره 1(وابسته به واحد های تعریف شده)</option>
+                                    <option value="">واحد شماره 2</option>
+                                    <option value="">واحد شماره 3</option>
+                                    <i class="fas fa-circle mx-1" style="color: #000;"></i>
+                                </select>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-md-6 col-lg-8">
                             <div class="input-group my-3" style="direction: ltr;">
-                                <span class="input-group-text justify-content-center w-75" >200,000 تومان</span>
-                                <span class="input-group-text w-25 text-center"> جمع کل </span>
+                                <select type="number" class="form-control text-center w_15" placeholder=""  value="50">
+                                    <option value="">مافوق 1</option>
+                                    <option value="">مافوق 2</option>
+                                    <option value="">مافوق 3</option>
+                                </select>
+                                <select class="input-group-text text-end w_70 font_08 d-flex align-items-center text_truncate">
+                                    <i class="fas fa-times text-danger hoverable_text pointer mx-1 has_tooltip" title="حذف محصول از سبد" data-bs-placement="top"></i>
+                                    <option value="">واحد شماره 1(وابسته به واحد های تعریف شده)</option>
+                                    <option value="">واحد شماره 2</option>
+                                    <option value="">واحد شماره 3</option>
+                                    <i class="fas fa-circle mx-1" style="color: #000;"></i>
+                                </select>
                             </div>
                         </div>
                         <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
                             <button class="btn btn-primary ">ذخیره</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">انصراف</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--  #endregion  -->
+    <!-- #region(collapsed) edit cart  modal  -->
+    <div class="modal fade" id="edit_cart_modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title flex-fill" id="exampleModalLabel">تعریف پست سازمانی ( اشخاص)</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row my-3 justify-content-center">
+                        <div class="col-12 col-md-4 col-lg-3 my-1">
+                            <input type="text" class="form-control" list="customer_list" placeholder="نام شخص">
+                            <datalist id="customer_list">
+                                <option value="عنوان 1">
+                                <option value="عنوان  2">
+                            </datalist>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <select class="form-control">
+                                <option value="">جنسیت</option>
+                                <option value="1">آقا</option>
+                                <option value="1">خانم</option>
+                            </select>                                
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <select class="form-control">
+                                <option value="">مدت سابقه</option>
+                                <option value="1">1سال</option>
+                                <option value="2">2سال</option>
+                                <option value="2">3سال</option>
+                            </select>                                
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                            <input title="شماره پلکان" type="number" class="form-control" placeholder="پله کان چندم مجموعه؟">
+                        </div>
+                        <div class="col-4 col-lg-1 d-flex justify-content-center align-items-center my-1">
+                            <i class="fas fa-check text-light bg-success rounded-circle p-2 mx-1 hoverable_text hoverable pointer has_tooltip hoverable_text" title="تایید ویژگی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
+                        </div>
+                        <hr class="mt-3">
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <select type="number" class="form-control text-center w_1rem">
+                                    <option value="">معاونت 1</option>
+                                    <option value="">معاونت 2</option>
+                                    <option value="">معاونت 3</option>
+                                </select>
+                                <div class="input-group-text text-end w_40 d-flex align-items-center text_truncate">
+                                    معاونت
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <select type="number" class="form-control text-center w_1rem">
+                                    <option value="">واحد شماره 1</option>
+                                    <option value="">واحد شماره 2</option>
+                                    <option value="">واحد شماره 3</option>
+                                </select>
+                                <div class="input-group-text text-end w_40 d-flex align-items-center text_truncate">
+                                    مافوق1
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <select type="number" class="form-control text-center w_1rem">
+                                    <option value="">پست یا عنوان شغلی 1</option>
+                                    <option value="">پست یا عنوان شغلی 2</option>
+                                    <option value="">پست یا عنوان شغلی 3</option>
+                                </select>
+                                <div class="input-group-text text-end w_40 d-flex align-items-center bg-info text_truncate">
+                                    پست شخص تعریف شده
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
+                            <button class="btn btn-success ">تایید و ایجاد پست تعریف شده</button>
+                            <button class="btn btn-info ">ذخیره اطلاعات وارد شده</button>
                         </div>
                     </div>
                 </div>
