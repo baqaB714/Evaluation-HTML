@@ -29,7 +29,7 @@
                     <li class="my-2"><a class="dropdown-item d-block text-center">قاسم بساکی</a></li>
                     <li class="my-2 d-flex justify-content-center align-items-center px-2">
                         <i class="fas fa-tachometer-alt"></i>
-                        <a class="dropdown-item sidebar_menu_item" data-section-id="first_login_page" href="#">داشبورد</a>
+                        <a class="dropdown-item"  href="#">داشبورد</a>
                     </li>
                     <li class="my-2 d-flex justify-content-center align-items-center px-2">
                         <i class="fas fa-paper-plane"></i>
@@ -40,13 +40,9 @@
                         <a class="dropdown-item" href="#">پیام ها</a>
                     </li>
                     <hr/>
-                    <li class="my-2 d-flex justify-content-center align-items-center px-2 sidebar_menu_item sidebar_menu_item" data-section-id="register_panel">
+                    <li class="my-2 d-flex justify-content-center align-items-center px-2">
                         <i class="fas fa-quote-right"></i>
-                        <a class="dropdown-item" href="#">ثبت نام</a>
-                    </li>
-                    <li class="my-2 d-flex justify-content-center align-items-center px-2 sidebar_menu_item sidebar_menu_item" data-section-id="login_panel">
-                        <i class="fas fa-quote-right"></i>
-                        <a class="dropdown-item" href="#">خروج و ورود جدید</a>
+                        <a class="dropdown-item" href="/login.html">خروج و ورود جدید</a>
                     </li>
                     <li class="my-2 d-flex justify-content-center align-items-center px-2 sidebar_menu_item sidebar_menu_item" data-section-id="change_password">
                         <i class="fas fa-quote-right"></i>
@@ -55,7 +51,7 @@
                     <hr/>
                     <li class="d-flex justify-content-center align-items-center px-2">
                         <i class="fas fa-power-off"></i>
-                        <a class="dropdown-item" href="#">خروج</a>
+                        <a class="dropdown-item" href="/welcome.html">خروج</a>
                     </li>
                 </ul>
                 <i class="far fa-bell fa-2x mx-3 pointer position-relative">
@@ -148,7 +144,7 @@
                 </li>
                 <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_question_section">
                     <i class="ms-3 icon fas fa-check-circle text-light"></i>
-                    <span class="hiddenable no_wrap font_08">مشاهده وضعیت خودم</span>
+                    <span class="hiddenable no_wrap font_08 ">مشاهده وضعیت خودم</span>
                 </li>
                 <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="view_result_person">
                     <i class="ms-3 icon fas fa-chart-area text-light"></i>
@@ -421,130 +417,6 @@
         </div>
         <!-- #endregion content -->
         
-        <!-- #region(collapsed) add product category section start -->
-        <div id="first_login_page" class="first_login_page main_section d-none">
-
-            
-            <div class="row justify-content-center align-item-center login_bg">
-                <div class="login-div d-flex flex-column ">
-
-                    <div class="d-flex justify-content-center">
-                        <h3 class="text-light  d-flex ">به سامانه ارزیابی پرسنل آب و فاضلاب استان مرکزی خوش آمدید</h3>
-
-                    </div>
-                    <div class=" mt-3 text-center">
-
-                        <button type="button" class="btn w-25 mx-2 btn btn-outline-info btn-lg sidebar_menu_item" data-section-id="login_panel">ورود</button>
-                        <button type="button" class="btn w-25 mx-2 btn-outline-warning btn-lg sidebar_menu_item" data-section-id="register_panel">ثبت نام</button>
-                    </div>
-
-                    
-
-                      
-
-
-
-                </div>
-            </div>
-
-            
-        </div>
-        <!-- #endregion content -->
-        <!-- #region(collapsed) add product category section start -->
-        <div id="register_panel" class="register_panel main_section d-none mt-3 mt-3">
-
-            
-            <div class="row justify-content-center align-item-center ">
-                <div class="login-div col-11 col-md-6 col-lg-4 border-4 border border_r3 shadow bg-light px-4">
-
-                      
-
-                    <form id="form-auth" dir="rtl" class="my-3" method="POST" action="https://azhafit.ir/register">
-                        <input type="hidden" name="_token" value="">
-                        <i class="fa fa-user-plus text-center text-primary d-block mb-2"></i>
-
-                        <h5 class="text-center">فرم ثبت نام</h5>
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">شماره تلفن همراه:</label>
-                            <input id="phone" type="number" name="phone" value="" required="" autofocus="" autocomplete="phone" class="form-control border_r3 shadow" placeholder="مثلا 09101111111">
-                        </div>
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">گذرواژه:</label>
-                            <input id="password" type="password" name="password" required="" autocomplete="new-password" class="form-control border_r3 shadow " placeholder="گذرواژه خود را وارد کنید(حد اقل 4 کارکتر - کیبرد لاتین)">
-                        </div>
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">تکرار گذرواژه:</label>
-                            <input id="password_confirmation" type="password" name="password_confirmation" required="" autocomplete="new-password" class="form-control border_r3 shadow" placeholder="مجدداً گذرواژه را وارد کنید...">
-                        </div>
-
-                        <div class="form-group my-2 mt-4 d-flex">
-                            <input name="" type="checkbox" class="mx-2 w_1rem">
-                            <label class="my-1 text-primary" for=""><span class="d-inline text-info cursor-pointer">نکات اولیه</span> را مطالعه نموده ام</label>
-                        </div>
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">ایمیل:</label>
-                            <input id="email" type="email" name="email" value="" class="form-control border_r3 shadow" placeholder=" (مثال : example@exam.ex) اختیاری">
-                            <h6 class="w-100 text-center text-primary my-3">ترجیحا ایمیل خود را وارد کنید تا در صورت فراموشی رمز عبور سریع تر بازیابی کنید و هم در جریان اطلاع رسانی های آژافیت قرار بگیرید</h6>
-                        </div>
-
-
-                        <div class="text-center my-4">
-                            <button type="submit" class="btn btn-success shadow">ثبت نام</button>
-                        </div>
-                        <a class="sidebar_menu_item d-block text-center pointer" data-section-id="login_panel">قبلا ثبت نام کرده ام</a>
-
-                    </form>
-
-
-                </div>
-            </div>
-
-            
-        </div>
-        <!-- #endregion content -->
-        <!-- #region(collapsed) add product category section start -->
-        <div id="login_panel" class="login_panel main_section d-none mt-3">
-            
-            <div class="row justify-content-center align-item-center ">
-                <div class="login-div col-11 col-md-6 col-lg-4 border-4 border border_r3 shadow bg-light px-4">
-
-                      
-
-                    <form id="form-auth" dir="rtl" class="my-3" method="POST" action="https://azhafit.ir/register">
-                        <input type="hidden" name="_token" value="">
-                        <i class="fa fa-user-check text-primary text-center d-block mb-2"></i>
-
-                        <h5 class="text-center">فرم ورود</h5>
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">شماره تلفن همراه:</label>
-                            <input id="phone" type="number" name="phone" value="" required="" autofocus="" autocomplete="phone" class="form-control border_r3 shadow" placeholder="مثلا 09101111111">
-                        </div>
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">گذرواژه:</label>
-                            <input id="password" type="password" name="password" required="" autocomplete="new-password" class="form-control border_r3 shadow " placeholder="گذرواژه خود را وارد کنید(حد اقل 4 کارکتر - کیبرد لاتین)">
-                        </div>
-
-                        <div class="text-center my-4">
-                            <button type="submit" class="btn btn-success shadow">ثبت نام</button>
-                        </div>
-                        <a class="sidebar_menu_item d-block text-center pointer" data-section-id="register_panel" >هنوز ثبت نام نکرده ام</a>
-                        <a class="sidebar_menu_item d-block text-center pointer" data-section-id="recovery_password" >رمز عبور را فراموش کرده ام</a>
-
-                    </form>
-
-
-                </div>
-            </div>
-
-            
-        </div>
-        <!-- #endregion content -->
     <!-- #region(collapsed) add product category section start -->
         <div id="change_password" class="change_password main_section d-none mt-3">
             
@@ -577,43 +449,6 @@
 
                         <div class="text-center my-4">
                             <button type="submit" class="btn btn-success shadow">ویرایش اطلاعات</button>
-                        </div>
-
-                    </form>
-
-
-                </div>
-            </div>
-
-            
-        </div>
-    <!-- #endregion content -->
-    <!-- #region(collapsed) add product category section start -->
-        <div id="recovery_password" class="recovery_password main_section d-none mt-3">
-            
-            <div class="row justify-content-center align-item-center ">
-                <div class="login-div col-11 col-md-6 col-lg-4 border-4 border border_r3 shadow bg-light px-4">
-
-                      
-
-                    <form id="form-auth" dir="rtl" class="my-3" method="POST" action="https://azhafit.ir/register">
-                        <input type="hidden" name="_token" value="">
-                        <i class="fa fa-user-lock text-center d-block mb-2"></i>
-
-                        <h5 class="text-center">فرم بازیابی رمز عبور</h5>
-
-                        <label class="mt-2" for="">در صورتی که گذرواژه کاربری را فراموش کرده اید ، شماره تلفن همراه خودرا در قسمت زیر وارد کرده و دکمه "ارسال به تلفن همراه" را بزنید.</label>
-
-
-                        <div class="form-group my-2">
-                            <label class="my-1 text-primary" for="">شماره همراه</label>
-                            <input id="phone" type="number" name="phone" value="" class="form-control border_r3 shadow" placeholder="فقط عدد (09101111111 مثلا)">
-                            <h6 class="w-100 text-center text-primary my-3">با زدن دکمه زیر ، پیامک های خود را چک کنید</h6>
-                        </div>
-
-
-                        <div class="text-center my-4">
-                            <button type="submit" class="btn btn-success shadow">ارسال به تلفن همراه</button>
                         </div>
 
                     </form>
@@ -1149,8 +984,153 @@
     </div>
 
     <!-- #endregion content -->
+        <!-- #region(collapsed) manage comments section start -->
+    <div id="manage_question_section" class="manage_question_section main_section d-none">
+        <h4 class="text-center my-3">مشاهده وضعیت خودم</h4>
+        <div class="row justify-content-between">
+
+            <div class="col-12 col-lg-7 ">
+
+                <table class="table table-responsive text-center table-hover table-bordered">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>#</th>
+                            <th>نوع ارزیابی</th>
+                            <th>گروه مورد ارزیابی</th>
+                            <th>تاریخ ارزیابی</th>
+                            <th>وضعیت در یک نگاه</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pointer sidebar_menu_item" data-section-id="view_result_items_1">
+                            <td>1</td>
+                            <td>عملکرد شغلی</td>
+                            <td>مدیران</td>
+                            <td>1400/10/12</td>
+                            <td>
+                                <div class="skill_row">
+                                    <span class="skill_number">72%</span>
+                                     <span class="progres_base"><span class="progres_var"></span></span>
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr class="pointer">
+                            <td>1</td>
+                            <td>وضعیت دانش</td>
+                            <td>پرسنل اداری</td>
+                            <td>1400/10/12</td>
+                            <td>
+                                <div class="skill_row">
+                                    <span class="skill_number">72%</span>
+                                     <span class="progres_base "><span class="progres_var"></span></span>
+                                 </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                    <ul class="pagination dir_ltr">
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                </nav>
         
-    <!-- #region(collapsed) evaluation Managers start -->
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5">
+                <img src="assets/images/chartLine.png" alt="" class="w-100" data-bs-toggle="modal" data-bs-target="#add_question_modal">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- #endregion content -->
+        <!-- #region(collapsed) manage comments section start -->
+    <div id="view_result_person" class="view_result_person main_section d-none">
+
+        <h4 class="text-center my-3">مشاهده وضعیت نیروها</h4>
+        <div class="row justify-content-between">
+
+            <div class="col-12 col-lg-7 ">
+
+                <table class="table table-responsive text-center table-hover table-bordered">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th>#</th>
+                            <th>واحد مربوطه</th>
+                            <th>وضعیت در یک نگاه</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pointer sidebar_menu_item" data-section-id="00000">
+                            <td>1</td>
+                            <td>حوزه قائم مقام</td>
+                            <td>
+                                <div class="skill_row">
+                                    <span class="skill_number">79%</span>
+                                     <span class="progres_base"><span class="progres_var"></span></span>
+                                 </div>
+                            </td>
+                        </tr>
+                        <tr class="pointer">
+                            <td>1</td>
+                            <td>معاونت مالی</td>
+                            <td>
+                                <div class="skill_row">
+                                    <span class="skill_number">75%</span>
+                                     <span class="progres_base "><span class="progres_var"></span></span>
+                                 </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                    <ul class="pagination dir_ltr">
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </nav>
+        
+
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5">
+                <img src="assets/images/chartLine.png" alt="" class="w-100" data-bs-toggle="modal" data-bs-target="#add_question_modal">
+            </div>
+        </div>
+
+    </div>
+
+    <!-- #endregion content -->
+        
+        <!-- #region(collapsed) evaluation Managers start -->
         <div id="evaluation_managers" class="evaluation_managers main_section d-none">
         <h4 class="text-center my-3">ارزشیابی مافوق</h4>
         <div class="row justify-content-between">
@@ -1210,7 +1190,7 @@
     </div>
 
     <!-- #endregion content -->
-    <!-- #region(collapsed) evaluation personals start -->
+        <!-- #region(collapsed) evaluation personals start -->
         <div id="evaluation_personals" class="evaluation_personals main_section d-none">
         <h4 class="text-center my-3">ارزشیابی زیر مجموعه (واحد شماره یک)</h4>
         <div class="row justify-content-between">
@@ -1270,7 +1250,7 @@
     </div>
 
     <!-- #endregion content -->
-    <!-- #region(collapsed) manage comments section start -->
+        <!-- #region(collapsed) manage comments section start -->
         <div id="view_result_items_1" class="view_result_items_1 main_section d-none">
         <h4 class="text-center my-3">عملکرد شغلی</h4>
         <div class="row justify-content-between">
@@ -1338,7 +1318,7 @@
     <!-- #endregion content -->
 
 
-    <!-- #region(collapsed) Page of Evaluation section start -->
+        <!-- #region(collapsed) Page of Evaluation section start -->
     <div id="view_result_items_3" class="view_result_items_1 main_section d-none">
             <h4 class="text-center my-3">عملکرد شغلی ( پرسنل اداری)</h4>
         <div class="row justify-content-between">
@@ -1423,150 +1403,6 @@
 
     <!-- #endregion content -->
 
-
-
-        <!-- #region(collapsed) manage questions section start -->
-        <div id="manage_question_section" class="manage_question_section main_section d-none">
-        <h4 class="text-center my-3">مشاهده وضعیت خودم</h4>
-        <div class="row justify-content-between">
-
-            <div class="col-12 col-lg-7 ">
-
-                <table class="table table-responsive text-center table-hover table-bordered">
-                    <thead class="table-secondary">
-                        <tr>
-                            <th>#</th>
-                            <th>نوع ارزیابی</th>
-                            <th>گروه مورد ارزیابی</th>
-                            <th>تاریخ ارزیابی</th>
-                            <th>وضعیت در یک نگاه</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="pointer sidebar_menu_item" data-section-id="view_result_items_1">
-                            <td>1</td>
-                            <td>عملکرد شغلی</td>
-                            <td>مدیران</td>
-                            <td>1400/10/12</td>
-                            <td>
-                                <div class="skill_row">
-                                    <span class="skill_number">72%</span>
-                                     <span class="progres_base"><span class="progres_var"></span></span>
-                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="pointer">
-                            <td>1</td>
-                            <td>وضعیت دانش</td>
-                            <td>پرسنل اداری</td>
-                            <td>1400/10/12</td>
-                            <td>
-                                <div class="skill_row">
-                                    <span class="skill_number">72%</span>
-                                     <span class="progres_base "><span class="progres_var"></span></span>
-                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <nav aria-label="Page navigation example" class="d-flex justify-content-center">
-                    <ul class="pagination dir_ltr">
-                        <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </nav>
-        
-
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-5">
-                <img src="assets/images/chartLine.png" alt="" class="w-100" data-bs-toggle="modal" data-bs-target="#add_question_modal">
-            </div>
-        </div>
-    </div>
-
-    <!-- #endregion content -->
-        <!-- #region(collapsed) manage questions section start -->
-        <div id="view_result_person" class="view_result_person main_section d-none">
-        <h4 class="text-center my-3">مشاهده وضعیت نیروها</h4>
-        <div class="row justify-content-between">
-
-            <div class="col-12 col-lg-7 ">
-
-                <table class="table table-responsive text-center table-hover table-bordered">
-                    <thead class="table-secondary">
-                        <tr>
-                            <th>#</th>
-                            <th>واحد مربوطه</th>
-                            <th>وضعیت در یک نگاه</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="pointer sidebar_menu_item" data-section-id="00000">
-                            <td>1</td>
-                            <td>حوزه قائم مقام</td>
-                            <td>
-                                <div class="skill_row">
-                                    <span class="skill_number">79%</span>
-                                     <span class="progres_base"><span class="progres_var"></span></span>
-                                 </div>
-                            </td>
-                        </tr>
-                        <tr class="pointer">
-                            <td>1</td>
-                            <td>معاونت مالی</td>
-                            <td>
-                                <div class="skill_row">
-                                    <span class="skill_number">75%</span>
-                                     <span class="progres_base "><span class="progres_var"></span></span>
-                                 </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-
-
-                <nav aria-label="Page navigation example" class="d-flex justify-content-center">
-                    <ul class="pagination dir_ltr">
-                        <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                        </li>
-                    </ul>
-                    </nav>
-        
-
-            </div>
-
-            <div class="col-12 col-md-6 col-lg-5">
-                <img src="assets/images/chartLine.png" alt="" class="w-100" data-bs-toggle="modal" data-bs-target="#add_question_modal">
-            </div>
-        </div>
-    </div>
-
-    <!-- #endregion content -->
 
     
     </section>
@@ -2196,13 +2032,13 @@
                 <div class="container">
                     <div class="row my-3 justify-content-center">
                         <div class="col-12 col-md-4 col-lg-3 my-1">
-                            <input type="text" class="form-control" list="customer_list" placeholder="نام شخص">
+                            <input type="text" class="form-control" list="customer_list" placeholder="عنوان پست سازمانی">
                             <datalist id="customer_list">
                                 <option value="عنوان 1">
                                 <option value="عنوان  2">
                             </datalist>
                         </div>
-                        <div class="col-12 col-md-4 col-lg-2 my-1">
+                        <!-- <div class="col-12 col-md-4 col-lg-2 my-1">
                             <select class="form-control">
                                 <option value="">جنسیت</option>
                                 <option value="1">آقا</option>
@@ -2216,9 +2052,9 @@
                                 <option value="2">2سال</option>
                                 <option value="2">3سال</option>
                             </select>                                
-                        </div>
+                        </div> -->
                         <div class="col-12 col-md-4 col-lg-2 my-1">
-                            <input title="شماره پلکان" type="number" class="form-control" placeholder="پله کان چندم مجموعه؟">
+                            <input title="شماره پلکان" type="number" class="form-control" placeholder="پلکان چندم مجموعه؟">
                         </div>
                         <div class="col-4 col-lg-1 d-flex justify-content-center align-items-center my-1">
                             <i class="fas fa-check text-light bg-success rounded-circle p-2 mx-1 hoverable_text hoverable pointer has_tooltip hoverable_text" title="تایید ویژگی" data-bs-toggle="tooltip" data-bs-placement="top"></i>
@@ -2234,7 +2070,7 @@
                                     <option value="">معاونت 3</option>
                                 </select>
                                 <div class="input-group-text text-end w_40 d-flex align-items-center text_truncate">
-                                    معاونت
+                                    معاونت یا مدیریت شهرستان
                                 </div>
                             </div>
                         </div>
@@ -2253,6 +2089,18 @@
                         <div class="col-12 col-md-6 col-lg-8">
                             <div class="input-group my-3" style="direction: ltr;">
                                 <select type="number" class="form-control text-center w_1rem">
+                                    <option value="">واحد شماره 1</option>
+                                    <option value="">واحد شماره 2</option>
+                                    <option value="">واحد شماره 3</option>
+                                </select>
+                                <div class="input-group-text text-end w_40 d-flex align-items-center text_truncate">
+                                    مافوق2
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-12 col-md-6 col-lg-8">
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <select type="number" class="form-control text-center w_1rem">
                                     <option value="">پست یا عنوان شغلی 1</option>
                                     <option value="">پست یا عنوان شغلی 2</option>
                                     <option value="">پست یا عنوان شغلی 3</option>
@@ -2261,7 +2109,7 @@
                                     پست شخص تعریف شده
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="btn_box text-center col-12 col-md-6 col-lg-8 mt-4">
                             <button class="btn btn-success ">تایید و ایجاد پست تعریف شده</button>
                             <button class="btn btn-info ">ذخیره اطلاعات وارد شده</button>

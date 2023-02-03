@@ -23,6 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             for (const section of allSections) {
                 section.classList.add('d-none')
             }
+            console.log(sectionId);
             document.getElementById(`${sectionId}`).classList.remove('d-none')
         })
     }

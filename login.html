@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>پنل ادمین</title>
+</head>
+<body dir="rtl">
+        
+        <!-- #region(collapsed) add product category section start -->
+        <div id="login_panel" class="login_panel main_section">
+            
+            <div class="row justify-content-center align-item-center w-100 login_bg m-0 align-content-center">
+                <div class="login-div col-11 col-md-6 col-lg-4 bg_blur border_r3 shadow px-4">
+
+                      
+
+                    <form id="form-auth" dir="rtl" class="my-3" method="POST" action="https://azhafit.ir/register">
+                        <input type="hidden" name="_token" value="">
+                        <i class="fa fa-user-check text-warning text-center d-block mb-2"></i>
+
+                        <h5 class="text-center">فرم ورود</h5>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">شماره تلفن همراه:</label>
+                            <input id="phone" type="text" name="phone" value="" required="" autofocus="" autocomplete="phone" class="form-control border_r3 shadow" placeholder="مثلا 09101111111">
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">گذرواژه:</label>
+                            <input id="password" type="password" name="password" required="" autocomplete="new-password" class="form-control border_r3 shadow " placeholder="گذرواژه خود را وارد کنید(کیبرد لاتین)">
+                        </div>
+
+                        <div class="text-center my-4">
+                            <button type="submit" class="btn btn-success shadow">ثبت نام</button>
+                        </div>
+                        <a href="/register.html" class="sidebar_menu_item d-block text-center pointer text-white" data-section-id="register_panel" >هنوز ثبت نام نکرده ام</a>
+                    </form>
+
+
+                </div>
+            </div>
+
+            
+        </div>
+        <!-- #endregion content -->
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -111,6 +111,9 @@ body{
 .w_40{
     width: 40% !important;
 }
+.w_100{
+    width: 100% !important;
+}
 
 .no_wrap{
     white-space: nowrap !important;
@@ -355,10 +358,15 @@ td , th {
 .border_r3{
     border-radius: 3rem !important;
 }
+.bg_blur{
+    background: #ffffff52 !important;
+    backdrop-filter: blur(9px) !important;
+}
 
 .login_bg{
     padding-top: 1rem;
-     min-height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     background: -webkit-gradient( linear, left top, left bottom, from(rgba(51, 51, 51, 0.6)), color-stop(rgba(10, 74, 83, 0.6)), to(rgba(10, 74, 83, 0.6)) ), url(/assets/images/background2.jpg) no-repeat;
     background: linear-gradient( rgba(51, 51, 51, 0.6), rgba(10, 74, 83, 0.6), rgba(10, 74, 83, 0.6) ), url(/assets/images/background2.jpg) no-repeat;
     background-size: cover; 

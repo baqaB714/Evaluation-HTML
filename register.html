@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>پنل ادمین</title>
+</head>
+<body dir="rtl">
+        <!-- #region(collapsed) add product category section start -->
+        <div id="register_panel" class="register_panel main_section mt-3 mt-3">
+
+            
+            <div class="row justify-content-center align-item-center w-100 login_bg align-content-center m-0">
+                <div class="login-div col-11 col-md-6 col-lg-4  border_r3 bg_blur shadow bg-light px-4">
+
+                      
+
+                    <form id="form-auth" dir="rtl" class="my-3" method="POST" action="https://azhafit.ir/register">
+                        <input type="hidden" name="_token" value="">
+                        <i class="fa fa-user-plus text-center text-warning d-block mb-2"></i>
+
+                        <h5 class="text-center">فرم ثبت نام</h5>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">نام :</label>
+                            <input id="name" type="text" name="name" class="form-control border_r3 shadow" placeholder="نام شناسنامه ای صحیح ...">
+                        </div>
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">نام خانوادگی:</label>
+                            <input id="" type="text" name="" value=""  class="form-control border_r3 shadow" placeholder="نام خانوادگی شناسنامه ای صحیح ...">
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">کد ملی :</label>
+                            <input id="" type="text" name="" value=""  class="form-control border_r3 shadow" placeholder="کد ملی همان نام کاربری شما می باشد">
+                        </div>
+
+                        <div class="d-flex flex-column input-group my-3" style="direction: ltr;">
+                            <label class="my-1 text-dark" for="">انتخاب واحد سازمانی:</label>
+                            <select type="number" class="form-control w_100 border_r3 shadow text-center w_1rem">
+                                <option value="">واحد سازمانی یا امور 1</option>
+                                <option value="">واحد سازمانی یا امور 2</option>
+                                <option value="">واحد سازمانی یا امور 3</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex flex-column input-group my-3" style="direction: ltr;">
+                                <label class="my-1 text-dark" for="">انتخاب پست سازمانی:</label>
+                                <select type="number" class="form-control w_100 border_r3 shadow text-center w_1rem">
+                                    <option value="">پست سازمانی 1</option>
+                                    <option value="">پست سازمانی 2</option>
+                                    <option value="">پست سازمانی 3</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">شماره تلفن همراه:</label>
+                            <input id="phone" type="text" name="phone" value="" required="" autofocus="" autocomplete="phone" class="form-control border_r3 shadow" placeholder="مثلا 09101111111">
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">گذرواژه:</label>
+                            <input id="password" type="password" name="password" required="" autocomplete="new-password" class="form-control border_r3 shadow " placeholder="گذرواژه خود را وارد کنید(حد اقل 4 کارکتر - کیبرد لاتین)">
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">تکرار گذرواژه:</label>
+                            <input id="password_confirmation" type="password" name="password_confirmation" required="" autocomplete="new-password" class="form-control border_r3 shadow" placeholder="مجدداً گذرواژه را وارد کنید...">
+                        </div>
+
+                        <div class="form-group my-2">
+                            <label class="my-1 text-dark" for="">ایمیل:</label>
+                            <input id="email" type="email" name="email" value="" class="form-control border_r3 shadow" placeholder=" (مثال : example@exam.ex) اختیاری">
+                            <h6 class="w-100 text-center text-dark my-3">ترجیحا ایمیل خود را وارد کنید تا در صورت فراموشی رمز عبور سریع تر بازیابی کنید و هم در جریان اطلاع رسانی های آژافیت قرار بگیرید</h6>
+                        </div>
+
+
+                        <div class="text-center my-4">
+                            <button type="submit" class="btn btn-success shadow">ثبت نام</button>
+                        </div>
+                        <a href="/login.html" class="sidebar_menu_item d-block text-center pointer text-white" data-section-id="login_panel">قبلا ثبت نام کرده ام</a>
+
+                    </form>
+
+
+                </div>
+            </div>
+            
+        </div>
+        <!-- #endregion content -->
+
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
