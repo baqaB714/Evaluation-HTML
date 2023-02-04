@@ -118,7 +118,7 @@
                     <i class="ms-3 icon far fa-address-book text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت کاربران</span>
                 </li>
-                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="Management_license">
+                <li class="py-1 text-start pe-4 sidebar_menu_item" data-section-id="manage_role_section">
                     <i class="ms-3 icon fas fa-calendar-check text-light"></i>
                     <span class="hiddenable no_wrap font_08">مدیریت نقشها و مجوزها</span>
                 </li>
@@ -807,7 +807,7 @@
                         <th>#</th>
                         <th>نام و نام خانوادگی</th>
                         <th>موبایل</th>
-                        <th>ایمیل</th>
+                        <th>کد ملی</th>
                         <th>نقش </th>
                         <th>تاریخ ثبت نام</th>
                         <th>عملیات</th>
@@ -818,7 +818,7 @@
                         <td>1</td>
                         <td>قاسم بساکی</td>
                         <td>09110110011</td>
-                        <td>mahdicmptr@gmail.com</td>
+                        <td>09185234439</td>
                         <td>کاربر</td>
                         <td>1400/10/12</td>
                         <td>
@@ -851,7 +851,7 @@
 
         <!-- #region(collapsed) add role section start -->
         <div id="manage_role_section" class="manage_role_section main_section d-none">
-            <h4 class="text-center my-3">مدیریت مجوز ها</h4>
+            <h4 class="text-center my-3">مدیریت نقش ها و مجوز ها</h4>
             <div class="row justify-content-between">
                 <div class="col-10 col-md-6 col-lg-4">
                     <div class="input-group mb-3" style="direction: ltr;">
@@ -869,7 +869,8 @@
                 <thead class="table-secondary">
                     <tr>
                         <th>#</th>
-                        <th>عنوان</th>
+                        <th>نام شخص</th>
+                        <th>عنوان نقش</th>
                         <th>توضیحات</th>
                         <th>وضعیت</th>
                         <th>عملیات</th>
@@ -878,6 +879,7 @@
                 <tbody>
                     <tr>
                         <td>1</td>
+                        <td>قاسم بساکی</td>
                         <td>نقش شماره 1</td>
                         <td>توضیحات در مورد این نقش که چیست و کلیات آن کدام است</td>
                         <td>
@@ -2392,92 +2394,11 @@
                         </div>
                         <div class="col-12 col-md-6 col-lg-8">
                             <div class="input-group my-1" style="direction: ltr;">
-                                <input type="text" class="form-control" placeholder="فقط فرمت ایمیل (email@yourhost.com)">
-                                <span class="input-group-text w_8rem justify-content-center">ایمیل</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <div class="input-group my-1" style="direction: ltr;">
                                 <span class="input-group-text justify-content-center pointer">
                                     <i class="fas fa-eye"></i>
                                 </span>
                                 <input type="password" class="form-control" placeholder="حد اقل 8 کارکتر">
                                 <span class="input-group-text w_8rem justify-content-center">رمز عبور</span>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-8 row px-0 my-3">
-                            <label>تاریخ تولد:</label>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <select class="form-control" >
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <span class="input-group-text w_8rem justify-content-center">روز</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <select class="form-control" >
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <span class="input-group-text w_8rem justify-content-center">ماه</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <select class="form-control" >
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">1368</option>
-                                        <option value="1">1300</option>
-                                        <option value="2">1301</option>
-                                        <option value="3">1302</option>
-                                    </select>
-                                    <span class="input-group-text w_8rem justify-content-center">سال</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-8 row px-0 my-3">
-                            <label>تاریخ ثبت موبایل:</label>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <select class="form-control" >
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <span class="input-group-text w_8rem justify-content-center">روز</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <select class="form-control" >
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                    </select>
-                                    <span class="input-group-text w_8rem justify-content-center">ماه</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <select class="form-control" >
-                                        <option value="">انتخاب کنید</option>
-                                        <option value="1">1400</option>
-                                        <option value="1">1399</option>
-                                        <option value="2">1398</option>
-                                        <option value="3">1397</option>
-                                    </select>
-                                    <span class="input-group-text w_8rem justify-content-center">سال</span>
-                                </div>
                             </div>
                         </div>
 
@@ -2492,47 +2413,7 @@
                             </div>
                         </div>
 
-                        <div class="col-12 col-md-6 col-lg-8 row px-0 mt-3">
-                            <label>آدرس:</label>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <input type="text" class="form-control" placeholder="">
-                                    <span class="input-group-text w_8rem justify-content-center">کشور</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <input type="text" class="form-control" placeholder="">
-                                    <span class="input-group-text w_8rem justify-content-center">استان</span>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4">
-                                <div class="input-group my-1" style="direction: ltr;">
-                                    <input type="text" class="form-control" placeholder="">
-                                    <span class="input-group-text w_8rem justify-content-center">شهر</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-8 mb-3">
-                            <div class="input-group my-1" style="direction: ltr;">
-                                <input type="text" class="form-control" placeholder="خیابان - کوچه و ...">
-                                <span class="input-group-text w_8rem justify-content-center">ادامه آدرس</span>
-                            </div>
-                        </div>
 
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <div class="input-group my-1" style="direction: ltr;">
-                                <input type="text" class="form-control" placeholder="مثلا @qasem">
-                                <span class="input-group-text w_8rem justify-content-center">اینستاگرام</span>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-md-6 col-lg-8">
-                            <div class="input-group my-1" style="direction: ltr;">
-                                <input type="text" class="form-control" placeholder="مثلا @qasem">
-                                <span class="input-group-text w_8rem justify-content-center">تلگرام</span>
-                            </div>
-                        </div>
                         <div class="col-12 col-md-6 col-lg-8">
                             <div class="input-group my-1" style="direction: ltr;">
                                 <input type="file" class="form-control" placeholder="تصویر">
@@ -2587,6 +2468,19 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="row justify-content-center">
+
+                        <div class="input-group my-3" style="direction: ltr;">
+                            <select type="number" class="form-control text-center w_1rem">
+                                <option value="">نام شماره 1</option>
+                                <option value="">نام شماره 2</option>
+                                <option value="">نام شماره 3</option>
+                            </select>
+                            <div class="input-group-text text-end w_40 d-flex align-items-center text_truncate">
+                                نام شخص
+                            </div>
+                        </div>
+
+
                         <div class="col-12">
                             <div class="input-group my-3" style="direction: ltr;">
                                 <input type="text" class="form-control" placeholder="">
@@ -2600,15 +2494,18 @@
                             </div>
                         </div>                        
                         <div class="col-12 my-1 mb-3">
-                            <div class="input-group my-2" style="direction: ltr;">
-                                <input type="text" class="form-control" placeholder="قسمتی از مجوز مورد نظر را وارد کنید" list="permissionsList">
-                                <span class="input-group-text w_8rem justify-content-center">دسترسی ها</span>
-                                <datalist id="permissionsList">
-                                    <option value="مجوز شماره 1">
-                                    <option value="مجوز شماره 2">
-                                    <option value="مجوز شماره 3">
-                                </datalist>
+
+                            <div class="input-group my-3" style="direction: ltr;">
+                                <select type="number" class="form-control text-center w_1rem">
+                                    <option value="">مجوز شماره 1</option>
+                                    <option value="">مجوز شماره 2</option>
+                                    <option value="">مجوز شماره 2</option>
+                                </select>
+                                <div class="input-group-text text-end w_40 d-flex align-items-center text_truncate">
+                                    نام شخص
+                                </div>
                             </div>
+    
                             <div class="col-12 col-md-6 col-lg-8">
                                 <span class="chips_elem">
                                     <i class="fas fa-times text-danger"></i>
